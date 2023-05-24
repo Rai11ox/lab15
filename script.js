@@ -1,13 +1,18 @@
-/*let a = 1;
-console.log(a);
-alert(a);
-let b = confirm("Yes?");
-alert(b);
-let c = prompt("How old are u?", 15);
-console.log(c);
-document.write(c);*/
-let d = 0;
-while(d <=100){
-    console.log(d);
-    d++;  
-};
+let number = 0;
+
+while (number <= 100) {
+    let b = true;
+
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            b = false;
+            break;
+        }
+    }
+
+    if (b) {
+        console.log(number);
+    }
+
+    number++;
+}
